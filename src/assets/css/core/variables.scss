@@ -1,17 +1,14 @@
 :root {
   /* Text Sizes */
-  --text-h1: 56px;
-  --text-h2: 44px;
-  --text-h3: 36px;
-  --text-h4: 28px;
-  --text-h5: 24px;
-  --text-h6: 16px;
-  --text-xs: 12px;
-  --text-sm: 14px;
-  --text-base: 16px;
-  --text-lg: 18px;
-  --text-xl: 20px;
-  --text-utility: 12px;
+  --text-h1: 2.5rem;
+  --text-h2: 1.75rem;
+  --text-h3: 1.25rem;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 2.5rem;
+  --text-utility: 0.75rem;
 
   /* Colors */
   --gray-100: #f7f8fc;
@@ -38,5 +35,5 @@
   --rounded: 8px;
 
   /* Sizes */
-  --login-box: 640px;
+  --header: 100px;
 }

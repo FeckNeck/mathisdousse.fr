@@ -1,9 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Hero from './components/hero.vue';
+import About from './components/about.vue';
+</script>
 
 <template>
-  <div class="container">
-    <h1>Home</h1>
-  </div>
+  <main>
+    <Hero />
+    <About />
+  </main>
 </template>
 
 <style scoped></style>
