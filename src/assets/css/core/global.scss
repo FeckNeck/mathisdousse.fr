@@ -16,7 +16,6 @@ html.dark {
 body {
   font-family: 'Nunito', sans-serif;
   font-size: var(--text-base);
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -29,4 +28,29 @@ main {
   margin-inline: auto;
   padding-inline: 2rem;
   width: 100%;
+  max-width: 1280px;
+}
+
+h1 {
+  font-size: var(--text-h1);
+  line-height: 2.5rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: var(--text-h2);
+  line-height: 2rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: var(--text-h3);
+  line-height: 1.75rem;
+  font-weight: 400;
+}
+
+.title {
+  font-size: var(--text-xl);
+  line-height: 2.5rem;
+  font-weight: 400;
 }
