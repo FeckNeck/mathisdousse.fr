@@ -7,7 +7,7 @@ const currentYear = new Date().getFullYear();
 <template>
   <footer>
     <div class="container">
-      <div class="d-flex items-center justify-between py-8">
+      <div class="d-flex items-center justify-between py-6">
         <p>&copy; {{ currentYear }} - Mathis Dousse</p>
         <div class="d-flex items-center g-4">
           <a
