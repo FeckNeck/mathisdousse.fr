@@ -12,7 +12,7 @@ const nextTheme = computed(() => (isDark.value ? 'clair' : 'sombre'));
 <template>
   <header>
     <div class="container">
-      <div class="d-flex items-center justify-between py-8">
+      <div class="d-flex items-center justify-between py-6">
         <img
           src="../assets/images/logo.png"
           alt="Mathis Dousse logo"
@@ -47,6 +47,7 @@ header {
   top: 0;
   backdrop-filter: blur(10px);
   height: var(--header);
+  z-index: 10;
 
   .logo {
     width: 7rem;
