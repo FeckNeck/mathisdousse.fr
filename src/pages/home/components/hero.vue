@@ -7,9 +7,9 @@ import { ArrowDownToLine } from 'lucide-vue-next';
     <div class="hero">
       <div class="hero__infos">
         <h1>Mathis Dousse</h1>
-        <h2>Développeur <span>Full Stack</span></h2>
+        <p>Développeur <span>Full Stack</span></p>
         <a
-          href="/Dousse_Mathis_CV.pdf"
+          href="/Mathis_DOUSSE_CV.pdf"
           target="_blank"
           class="hero__cv-btn"
           aria-label="Download CV"
@@ -27,6 +27,10 @@ import { ArrowDownToLine } from 'lucide-vue-next';
 </template>
 
 <style scoped lang="scss">
+section {
+  padding-block: 0 !important;
+}
+
 .hero {
   display: flex;
   align-items: center;
@@ -41,7 +45,11 @@ import { ArrowDownToLine } from 'lucide-vue-next';
     gap: 1.5rem;
     align-items: flex-start;
 
-    h2 {
+    p {
+      font-size: 2rem;
+      line-height: 2.5rem;
+      font-weight: 400;
+
       span {
         position: relative;
       }
@@ -61,7 +69,7 @@ import { ArrowDownToLine } from 'lucide-vue-next';
       }
     }
 
-    h2 span:hover::before {
+    p span:hover::before {
       transform: rotate(0deg);
     }
   }
@@ -70,10 +78,10 @@ import { ArrowDownToLine } from 'lucide-vue-next';
     display: flex;
     align-items: center;
     padding: 0.5rem 1rem;
-    background-color: var(--gray-800);
-    border: 2px solid var(--gray-700);
+    background-color: var(--secondary);
+    border: 2px solid var(--border);
     border-radius: var(--rounded-sm);
-    color: white;
+    color: inherit;
     gap: 0.5rem;
     cursor: pointer;
     transition: all 300ms ease;
@@ -83,18 +91,17 @@ import { ArrowDownToLine } from 'lucide-vue-next';
       border-color: var(--teal);
     }
   }
-
-  @media (max-width: 768px) {
-    &__infos {
-      align-items: center;
-    }
-  }
 }
 
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
     justify-content: space-evenly;
+
+    &__infos {
+      align-items: center;
+      text-align: center;
+    }
   }
 }
 </style>
