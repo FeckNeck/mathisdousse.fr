@@ -3,7 +3,7 @@
 <template>
   <section>
     <div class="container">
-      <p class="title">À propos</p>
+      <h2>À propos</h2>
       <div class="about">
         <p>
           Actuellement en seconde année de master MALIA (Machine Learning
@@ -13,7 +13,7 @@
           et mettre à profit mes connaissances et compétences en entreprise.
         </p>
         <img
-          src="../../../assets/images/MDO.jpg"
+          src="../../../assets/images/MDO.png"
           alt="Picture of me"
           class="about__picture" />
         <p>

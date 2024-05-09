@@ -1,3 +1,5 @@
+import type { Component } from 'vue';
+
 export interface Language {
   name: string;
   color: string;
@@ -22,4 +24,13 @@ export interface Project {
 export interface CategoryProjects {
   category: Category;
   projects: Project[];
+}
+
+export interface Experience {
+  title: string;
+  description: string;
+  company: string;
+  icon: Component;
+  startDate: Date;
+  endDate: Date;
 }
