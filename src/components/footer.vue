@@ -30,8 +30,9 @@ const currentYear = new Date().getFullYear();
 
 <style scoped lang="scss">
 footer {
-  background-color: var(--gray-800);
-  border: 2px solid var(--gray-700);
+  background-color: var(--secondary);
+  border: 2px solid var(--border);
+  color: inherit;
 
   a {
     transition: color 0.3s ease;

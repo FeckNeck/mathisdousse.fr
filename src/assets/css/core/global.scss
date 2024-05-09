@@ -4,24 +4,35 @@ body {
 }
 
 html {
-  background-color: var(--gray-100);
   color: var(--gray-900);
 }
 
 html.dark {
-  background-color: var(--gray-900);
+  --primary: var(--gray-900);
+  --secondary: var(--gray-800);
+  --ternary: var(--gray-700);
+  --border: var(--gray-700);
   color: var(--gray-100);
 }
 
 body {
   font-family: 'Nunito', sans-serif;
   font-size: var(--text-base);
+  background-color: var(--primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 main {
   flex-grow: 1;
+}
+
+section {
+  padding-block: 4rem;
+
+  h2 {
+    padding-bottom: 1rem;
+  }
 }
 
 .container {
@@ -39,18 +50,11 @@ h1 {
 
 h2 {
   font-size: var(--text-h2);
-  line-height: 2rem;
   font-weight: 400;
 }
 
 h3 {
   font-size: var(--text-h3);
   line-height: 1.75rem;
-  font-weight: 400;
-}
-
-.title {
-  font-size: var(--text-xl);
-  line-height: 2.5rem;
   font-weight: 400;
 }
