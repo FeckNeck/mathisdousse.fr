@@ -58,6 +58,7 @@
     width: 100%;
     border-radius: 0.5rem;
     transition: all 300ms ease;
+    background-color: var(--border);
 
     &:hover {
       transform: translateY(-0.5rem);
