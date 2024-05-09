@@ -5,37 +5,44 @@
     <div class="container">
       <h2>À propos</h2>
       <div class="about">
-        <p>
-          Actuellement en seconde année de master MALIA (Machine Learning
-          appliqué à l'Intelligence Artificielle) à l'université Lyon 2, je me
-          passionne pour le développement et en particulier dans l'ecosystème
-          Node.js et Java. J'ai pour ambition de devenir développeur full stack
-          et mettre à profit mes connaissances et compétences en entreprise.
-        </p>
-        <img
-          src="../../../assets/images/MDO.png"
-          alt="Picture of me"
-          class="about__picture" />
-        <p>
-          Une fois mon diplôme obtenu cet été, je serai à la recherche d'un CDI
-          dès septembre 2024. Je suis ouvert aux opportunités qui s'offrent à
-          moi. Si vous êtes intéressés par mon profil, n'hésitez-pas à me
-          contacter par
-          <a
-            href="mailto:mathis.dousse@outlook.fr"
-            class="about__social-link"
-            aria-label="link to my mail"
-            >mail</a
-          >
-          ou sur
-          <a
-            href="https://www.linkedin.com/in/mathis-dousse"
-            target="_blank"
-            class="about__social-link"
-            aria-label="link to my linkedin"
-            >linkedin</a
-          >.
-        </p>
+        <div>
+          <p>
+            Actuellement en seconde année de master MALIA (Machine Learning
+            appliqué à l'Intelligence Artificielle) à l'université Lyon 2, je me
+            passionne pour le développement et en particulier dans l'ecosystème
+            Node.js et Java. J'ai pour ambition de devenir développeur full
+            stack et mettre à profit mes connaissances et compétences en
+            entreprise.
+          </p>
+        </div>
+        <div>
+          <img
+            src="../../../assets/images/MDO.png"
+            alt="Picture of me"
+            class="about__picture" />
+        </div>
+        <div>
+          <p>
+            Une fois mon diplôme obtenu cet été, je serai à la recherche d'un
+            CDI dès septembre 2024. Je suis ouvert aux opportunités qui
+            s'offrent à moi. Si vous êtes intéressés par mon profil,
+            n'hésitez-pas à me contacter par
+            <a
+              href="mailto:mathis.dousse@outlook.fr"
+              class="about__social-link"
+              aria-label="link to my mail"
+              >mail</a
+            >
+            ou sur
+            <a
+              href="https://www.linkedin.com/in/mathis-dousse"
+              target="_blank"
+              class="about__social-link"
+              aria-label="link to my linkedin"
+              >linkedin</a
+            >.
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -55,7 +62,6 @@
   }
 
   &__picture {
-    width: 100%;
     border-radius: 0.5rem;
     transition: all 300ms ease;
     background-color: var(--border);
