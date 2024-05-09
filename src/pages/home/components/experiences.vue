@@ -6,36 +6,35 @@ import CupOfTea from '@/components/icons/cup_of_tea.vue';
 import type { Experience } from '@/types';
 import { breakpointsTailwind, useBreakpoints } from '@vueuse/core';
 
-const breakpoints = useBreakpoints(breakpointsTailwind);
-
 const experiences: Experience[] = [
   {
     title: 'Stage développeur web',
-    description: "Refonte back et front d'un site intranet",
     company: 'CNPE du Bugey',
     startDate: new Date(2021, 4),
-    endDate: new Date(2021, 6),
+    endDate: new Date(2021, 5),
     icon: Edf,
   },
   {
     title: 'Stage développeur full stack',
-    description:
-      "Réalisation d'une application web/mobile permettant de gérer la prise en charge de conteneur maritime.",
-    company: 'Cup of T',
-    startDate: new Date(2023, 5),
-    endDate: new Date(2023, 8),
+    company: 'Cup Of T',
+    startDate: new Date(2023, 4),
+    endDate: new Date(2023, 7),
     icon: CupOfTea,
   },
   {
     title: 'Alternance développeur full stack',
-    description:
-      'Développement et déploiement sur le cloud d’un chat bot web en utilisant de la génération augmentée de récupération (RAG) sur des données d’entreprise.',
     company: 'BEOM Consulting',
     startDate: new Date(2023, 9),
-    endDate: new Date(2024, 9),
+    endDate: new Date(2024, 7),
     icon: Beom,
   },
 ];
+
+const breakpoints = useBreakpoints(breakpointsTailwind);
+const dateOptions: Intl.DateTimeFormatOptions = {
+  year: 'numeric',
+  month: 'long',
+};
 
 const indicators = ref<HTMLElement[]>([]);
 const progressBar = ref<number>(0);
@@ -75,8 +74,13 @@ const progressBarStyle = computed(() => {
               <h3>{{ experience.title }}</h3>
               <p>{{ experience.company }}</p>
               <p>
-                {{ experience.startDate.toLocaleDateString() }} -
-                {{ experience.endDate.toLocaleDateString() }}
+                {{
+                  experience.startDate.toLocaleDateString('fr-FR', dateOptions)
+                }}
+                -
+                {{
+                  experience.endDate.toLocaleDateString('fr-FR', dateOptions)
+                }}
               </p>
             </div>
             <span ref="indicators"></span>

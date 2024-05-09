@@ -28,7 +28,6 @@ export interface CategoryProjects {
 
 export interface Experience {
   title: string;
-  description: string;
   company: string;
   icon: Component;
   startDate: Date;
