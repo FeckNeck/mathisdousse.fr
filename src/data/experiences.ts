@@ -21,7 +21,7 @@ export const experiences: Experience[] = [
   {
     title: 'Alternance développeur full stack',
     company: 'BEOM Consulting',
-    startDate: new Date(2023, 9),
+    startDate: new Date(2023, 8),
     endDate: new Date(2024, 7),
     icon: Beom,
   },
