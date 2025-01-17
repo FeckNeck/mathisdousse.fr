@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Link from '@/components/Link.vue';
+</script>
 
 <template>
   <section>
@@ -7,12 +9,11 @@
       <div class="about">
         <div>
           <p>
-            Actuellement en seconde année de master MALIA (Machine Learning
-            appliqué à l'Intelligence Artificielle) à l'université Lyon 2, je me
-            passionne pour le développement et en particulier dans l'ecosystème
-            Node.js et Java. J'ai pour ambition de devenir développeur full
-            stack et mettre à profit mes connaissances et compétences en
-            entreprise.
+            Diplomé depuis en 2024 d'un master en informatique spécialité
+            machine learning et data science, j'ai souhaité tout au long de mon
+            cursus me spécialiser dans le développement full stack. Ce domaine
+            me permettant de m'exprimer pleinement en tant que développeur dans
+            des technologies que j'apprécie particulièrement.
           </p>
         </div>
         <div>
@@ -23,24 +24,35 @@
         </div>
         <div>
           <p>
-            Une fois mon diplôme obtenu cet été, je serai à la recherche d'un
-            CDI dès septembre 2024. Je suis ouvert aux opportunités qui
-            s'offrent à moi. Si vous êtes intéressés par mon profil,
-            n'hésitez-pas à me contacter par
-            <a
-              href="mailto:mathis.dousse@outlook.fr"
-              class="about__social-link"
-              aria-label="link to my mail"
-              >mail</a
+            <span>Actuellement en CDI depuis Septembre 2024 chez </span>
+            <Link
+              text="CGI"
+              href="https://www.linkedin.com/company/cgi/"
+              aria-label="link to CGI linkedin" />
+            <span
+              >. J'intervient en tant que développeur full stack sur un projet
+              de grande envergure pour le compte d'</span
             >
-            ou sur
-            <a
+            <Link
+              text="ÉDF"
+              href="https://www.linkedin.com/company/edf/"
+              aria-label="link to EDF linkedin" />
+            <span
+              >. Je suis ouvert aux opportunités qui s'offrent à moi, en
+              particulier pour travailler sur la mise en place d'un design
+              system. Si vous êtes intéressés par mon profil, n'hésitez-pas à me
+              contacter par
+            </span>
+            <Link
+              text="mail"
+              href="mailto:mathis.dousse@outlook.fr"
+              aria-label="link to my mail" />
+            <span> ou sur </span>
+            <Link
+              text="linkedin"
               href="https://www.linkedin.com/in/mathis-dousse"
-              target="_blank"
-              class="about__social-link"
-              aria-label="link to my linkedin"
-              >linkedin</a
-            >.
+              aria-label="link to my linkedin" />
+            <span>.</span>
           </p>
         </div>
       </div>
@@ -68,32 +80,6 @@
 
     &:hover {
       transform: translateY(-0.5rem);
-    }
-  }
-
-  &__social-link {
-    position: relative;
-    transition: all 300ms ease;
-
-    &::after {
-      background-color: var(--teal);
-      height: 6%;
-      bottom: 0;
-      content: '';
-      left: 0;
-      min-height: 2px;
-      position: absolute;
-      width: 100%;
-      z-index: -1;
-      transition: height 300ms ease;
-    }
-
-    &:hover {
-      color: var(--gray-100);
-    }
-
-    &:hover::after {
-      height: 100%;
     }
   }
 }

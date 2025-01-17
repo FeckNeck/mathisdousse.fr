@@ -7,7 +7,10 @@ import { ArrowDownToLine } from 'lucide-vue-next';
     <div class="hero">
       <div class="hero__infos">
         <h1>Mathis Dousse</h1>
-        <p>Développeur <span>Full Stack</span></p>
+        <p>
+          Ingénieur
+          <span>Full Stack</span>
+        </p>
         <a
           href="/Mathis_DOUSSE_CV.pdf"
           target="_blank"

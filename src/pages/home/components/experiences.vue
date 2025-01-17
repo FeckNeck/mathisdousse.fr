@@ -1,13 +1,9 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue';
 import { experiences } from '@/data/experiences';
 import { breakpointsTailwind, useBreakpoints } from '@vueuse/core';
+import { computed, ref } from 'vue';
 
 const breakpoints = useBreakpoints(breakpointsTailwind);
-const dateOptions: Intl.DateTimeFormatOptions = {
-  year: 'numeric',
-  month: 'long',
-};
 
 const indicators = ref<HTMLElement[]>([]);
 const progressBar = ref<number>(0);
@@ -38,23 +34,12 @@ const progressBarStyle = computed(() => {
             :key="index"
             @mouseover="updateProgressBar(index)"
             @mouseleave="progressBar = 0"
-            class="experiences__grid__item"
-            :class="{
-              'experiences__grid__item--even': index % 2 != 0,
-            }">
+            class="experiences__grid__item">
             <div class="experiences__grid__item__content">
               <component :is="experience.icon" />
               <h3>{{ experience.title }}</h3>
               <p>{{ experience.company }}</p>
-              <p>
-                {{
-                  experience.startDate.toLocaleDateString('fr-FR', dateOptions)
-                }}
-                -
-                {{
-                  experience.endDate.toLocaleDateString('fr-FR', dateOptions)
-                }}
-              </p>
+              <p>{{ experience.startDate }} - {{ experience.endDate }}</p>
             </div>
             <span ref="indicators"></span>
           </div>
@@ -76,8 +61,10 @@ const progressBarStyle = computed(() => {
   &__grid {
     display: grid;
     justify-content: space-evenly;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
     height: 100%;
+    width: 100%;
 
     &__item {
       display: flex;
@@ -85,8 +72,9 @@ const progressBarStyle = computed(() => {
       align-items: center;
       align-self: flex-start;
       gap: 1rem;
+      width: 100%;
 
-      &--even {
+      &:nth-child(odd) {
         align-self: flex-end;
         flex-direction: column-reverse;
 
@@ -105,16 +93,13 @@ const progressBarStyle = computed(() => {
         text-align: center;
         justify-content: space-between;
         height: 200px;
+        width: 100%;
         gap: 0.5rem;
         padding: 1rem;
         border: 2px solid var(--border);
         background-color: var(--primary);
         border-radius: 0.25rem;
         transition: border-color 0.3s ease-in-out;
-
-        > svg {
-          height: 2rem;
-        }
 
         &::before {
           content: '';
@@ -130,6 +115,10 @@ const progressBarStyle = computed(() => {
           right: 0;
           margin-inline: auto;
           rotate: 45deg;
+        }
+
+        > svg {
+          height: 2rem;
         }
       }
 
@@ -188,7 +177,7 @@ const progressBarStyle = computed(() => {
 
 @media (max-width: 768px) {
   .experiences {
-    height: 1000px;
+    height: 1200px;
 
     &__grid {
       display: flex;

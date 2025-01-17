@@ -1,6 +1,7 @@
 import type { Component } from 'vue';
 
 export type Category = 'Web' | 'AI';
+
 export interface Language {
   name: string;
   color: string;
@@ -22,6 +23,6 @@ export interface Experience {
   title: string;
   company: string;
   icon: Component;
-  startDate: Date;
-  endDate: Date;
+  startDate: string;
+  endDate: string;
 }

@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import Hero from './components/hero.vue';
 import About from './components/about.vue';
-import Projects from './components/projects.vue';
 import Experiences from './components/experiences.vue';
+import Hero from './components/hero.vue';
+import Projects from './components/projects.vue';
 </script>
 
 <template>

@@ -1,28 +1,36 @@
-import type { Experience } from '@/types';
-import Edf from '@/components/icons/edf.vue';
-import CupOfTea from '@/components/icons/cup_of_tea.vue';
 import Beom from '@/components/icons/beom.vue';
+import Cgi from '@/components/icons/cgi.vue';
+import CupOfTea from '@/components/icons/cup_of_tea.vue';
+import Edf from '@/components/icons/edf.vue';
+import type { Experience } from '@/types';
 
 export const experiences: Experience[] = [
   {
     title: 'Stage développeur web',
     company: 'CNPE du Bugey',
-    startDate: new Date(2021, 4),
-    endDate: new Date(2021, 5),
+    startDate: 'mai 2021',
+    endDate: 'juin 2021',
     icon: Edf,
   },
   {
     title: 'Stage développeur full stack',
-    company: 'Cup Of T',
-    startDate: new Date(2023, 4),
-    endDate: new Date(2023, 7),
+    company: 'Cup Of Tea',
+    startDate: 'mai 2023',
+    endDate: 'août 2023',
     icon: CupOfTea,
   },
   {
     title: 'Alternance développeur full stack',
     company: 'BEOM Consulting',
-    startDate: new Date(2023, 8),
-    endDate: new Date(2024, 7),
+    startDate: 'septembre 2023',
+    endDate: 'août 2024',
     icon: Beom,
+  },
+  {
+    title: 'Ingénieur full stack',
+    company: 'CGI',
+    startDate: 'septembre 2024',
+    endDate: 'présent',
+    icon: Cgi,
   },
 ];

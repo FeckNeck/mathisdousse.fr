@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { Mail, Moon, Sun } from 'lucide-vue-next';
 import { useDark, useToggle } from '@vueuse/core';
+import { Mail, Moon, Sun } from 'lucide-vue-next';
 import { computed } from 'vue';
 
 const isDark = useDark();
 const toggleDark = useToggle(isDark);
 
-const nextTheme = computed(() => (isDark.value ? 'clair' : 'sombre'));
+const nextTheme = computed<string>(() => (isDark.value ? 'clair' : 'sombre'));
 </script>
 
 <template>

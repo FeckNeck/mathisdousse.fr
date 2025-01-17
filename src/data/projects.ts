@@ -1,5 +1,5 @@
-import type { CategoryProjects } from '@/types';
 import { vue, adonis, python, r } from './languages';
+import type { CategoryProjects } from '@/types';
 
 export const categoriesProjects: CategoryProjects[] = [
   {

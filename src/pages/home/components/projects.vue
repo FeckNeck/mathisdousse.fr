@@ -1,13 +1,16 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue';
 import { categoriesProjects } from '@/data/projects';
 import { BookMarked } from 'lucide-vue-next';
+import { computed, ref } from 'vue';
+import type { Category } from '@/types';
 
 const GITHUB_URL = 'https://github.com/FeckNeck/';
 
 const projectsRefs = ref<HTMLInputElement[] | null[]>([]);
 
-const categories = computed(() => categoriesProjects.map((c) => c.category));
+const categories = computed<Category[]>(() =>
+  categoriesProjects.map((c) => c.category),
+);
 const activeCategory = ref<number>(0);
 
 const changeCategory = (index: number) => {
@@ -25,11 +28,11 @@ const changeCategory = (index: number) => {
           <button
             v-for="(category, index) in categories"
             :key="category + index"
+            @click="changeCategory(index)"
             :class="{
-              'projects__categories-btn--active': index === activeCategory,
+              '--active': index === activeCategory,
             }"
-            class="projects__categories-btn"
-            @click="changeCategory(index)">
+            class="projects__categories-btn">
             {{ category }}
           </button>
           <span
@@ -110,7 +113,7 @@ const changeCategory = (index: number) => {
         color: var(--teal);
       }
 
-      &--active {
+      &.--active {
         color: var(--teal);
       }
     }
