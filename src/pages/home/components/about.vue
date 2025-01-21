@@ -13,7 +13,7 @@ import Link from '@/components/Link.vue';
             machine learning et data science, j'ai souhaité tout au long de mon
             cursus me spécialiser dans le développement full stack. Ce domaine
             me permettant de m'exprimer pleinement en tant que développeur dans
-            des technologies que j'apprécie particulièrement.
+            les écosystèmes node.js et java que j'affectionne particulièrement.
           </p>
         </div>
         <div>
