@@ -9,11 +9,12 @@ import Link from '@/components/Link.vue';
       <div class="about">
         <div>
           <p>
-            Diplomé depuis en 2024 d'un master en informatique spécialité
-            machine learning et data science, j'ai souhaité tout au long de mon
-            cursus me spécialiser dans le développement full stack. Ce domaine
-            me permettant de m'exprimer pleinement en tant que développeur dans
-            les écosystèmes node.js et java que j'affectionne particulièrement.
+            Diplomé depuis 2024 d'un master en informatique spécialisé dans le
+            machine learning et l'IA, j'ai souhaité étendre ces compétences tout
+            en me spécialisant dans le développement full stack. Ce domaine me
+            permet de m'exprimer pleinement et de mettre à profit mon
+            savoir-faire en tant que développeur, dans les écosystèmes node.js
+            et java.
           </p>
         </div>
         <div>
@@ -30,16 +31,16 @@ import Link from '@/components/Link.vue';
               href="https://www.linkedin.com/company/cgi/"
               aria-label="link to CGI linkedin" />
             <span
-              >. J'intervient en tant que développeur full stack sur un projet
+              >. J'interviens en tant que développeur full stack sur un projet
               de grande envergure pour le compte d'</span
             >
             <Link
-              text="ÉDF"
+              text="EDF"
               href="https://www.linkedin.com/company/edf/"
               aria-label="link to EDF linkedin" />
             <span
-              >. Je suis ouvert aux opportunités qui s'offrent à moi, en
-              particulier pour travailler sur la mise en place d'un design
+              >. Je suis toutefois ouvert aux opportunités qui s'offrent à moi,
+              en particulier pour travailler sur la mise en place d'un design
               system. Si vous êtes intéressés par mon profil, n'hésitez-pas à me
               contacter par
             </span>
@@ -49,7 +50,7 @@ import Link from '@/components/Link.vue';
               aria-label="link to my mail" />
             <span> ou sur </span>
             <Link
-              text="linkedin"
+              text="Linkedin"
               href="https://www.linkedin.com/in/mathis-dousse"
               aria-label="link to my linkedin" />
             <span>.</span>
